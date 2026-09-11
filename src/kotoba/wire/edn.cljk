@@ -6,7 +6,7 @@
 ;; to turn an EDN map into wire bytes and back, but nothing about sockets —
 ;; see `kotoba.wire.tcp` for the actual Node socket I/O built on top of
 ;; this. Portable `.cljc`: no platform-specific string/crypto/socket API,
-;; runs identically under JVM `clojure -M:test` and Node-hosted
+;; runs identically under JVM `kbb -M:test` and Node-hosted
 ;; ClojureScript (nbb).
 (ns kotoba.wire.edn
   (:require [clojure.edn :as edn]

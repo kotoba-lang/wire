@@ -4,7 +4,7 @@
 ;; .cljs, NOT .cljc: real `node:net` socket I/O, so this only runs under a
 ;; Node-hosted ClojureScript runtime (nbb). `kotoba.wire.framing` and
 ;; `kotoba.wire.edn` stay pure/portable `.cljc` on purpose (testable under
-;; plain JVM `clojure -M:test`) — this namespace is the thin impure layer
+;; plain JVM `kbb -M:test`) — this namespace is the thin impure layer
 ;; that actually pushes their byte-vectors down a real socket and pulls
 ;; real socket bytes back into their byte-vectors.
 ;;

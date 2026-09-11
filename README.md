@@ -12,7 +12,7 @@ reinvent the same plumbing when they gain real I/O.
 Built on [`kotoba-lang/bytes`](https://github.com/kotoba-lang/bytes)
 (portable byte-vector primitives) rather than any platform-specific byte
 type, so the framing/codec layers are pure, portable `.cljc` — testable
-under plain JVM `clojure -M:test`, not only under a Node-hosted
+under plain JVM `kbb -M:test`, not only under a Node-hosted
 ClojureScript runtime.
 
 ## Wire format
@@ -109,12 +109,12 @@ moved here).
 ## Test
 
 ```bash
-clojure -M:test
-clojure -M:lint
+kbb -M:test
+kbb -M:lint
 ```
 
 `kotoba.wire.framing` and `kotoba.wire.edn` are pure `.cljc` and fully
-covered by `clojure -M:test` (JVM), including `defragment`'s boundary
+covered by `kbb -M:test` (JVM), including `defragment`'s boundary
 cases: empty input, fewer than 4 bytes (no complete length prefix yet), a
 frame split across two/many `defragment` calls, multiple complete frames
 arriving in a single call, and zero-length-payload frames.

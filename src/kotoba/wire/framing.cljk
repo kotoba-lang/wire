@@ -6,7 +6,7 @@
 ;; this extraction): a 4-byte big-endian length prefix followed by that
 ;; many bytes of payload. Extracted here so the exact same stream-
 ;; reassembly logic is:
-;;   - testable under plain JVM `clojure -M:test` (not only under a
+;;   - testable under plain JVM `kbb -M:test` (not only under a
 ;;     Node-hosted ClojureScript runtime like nbb), because it operates on
 ;;     plain `kotoba.bytes` byte-vectors (`vector<int 0..255>`), never a
 ;;     platform `Buffer`/typed array, and
