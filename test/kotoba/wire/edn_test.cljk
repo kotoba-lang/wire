@@ -2,7 +2,7 @@
   "Round-trip coverage for kotoba.wire.edn: encode a map to a framed
   byte-vector, defragment it back apart, decode it back to a map, and
   confirm it's identical to the original — pure `.cljc`, runs under plain
-  `clojure -M:test`."
+  `kbb -M:test`."
   (:require [clojure.test :refer [deftest is testing]]
             [kotoba.bytes :as bytes]
             [kotoba.wire.edn :as wedn]

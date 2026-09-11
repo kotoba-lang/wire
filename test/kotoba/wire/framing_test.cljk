@@ -1,7 +1,7 @@
 (ns kotoba.wire.framing-test
   "Boundary-case coverage for kotoba.wire.framing/defragment — the core
   stream-reassembly logic this whole library exists for. Pure `.cljc`, runs
-  under plain `clojure -M:test` (no socket, no nbb needed) even though the
+  under plain `kbb -M:test` (no socket, no nbb needed) even though the
   logic under test is what a real TCP stream reassembly needs."
   (:require [clojure.test :refer [deftest is testing]]
             [kotoba.bytes :as bytes]
