@@ -44,7 +44,7 @@
   `defragment` again — this function itself is stateless, a single map in,
   a single map out.
 
-  Boundary cases (see `test/kotoba/wire/framing_test.cljc` for executable
+  Boundary cases (see `test/kotoba/wire/framing_test.cljk` for executable
   coverage of every one of these):
     - empty input -> `{:frames [] :remainder []}`
     - fewer than 4 bytes (not even a full length prefix) -> the whole
