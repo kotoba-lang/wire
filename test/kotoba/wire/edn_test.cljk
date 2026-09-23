@@ -3,7 +3,7 @@
   byte-vector, defragment it back apart, decode it back to a map, and
   confirm it's identical to the original — pure `.cljc`, runs under plain
   `kbb -M:test`."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [kotoba.bytes :as bytes]
             [kotoba.wire.edn :as wedn]
             [kotoba.wire.framing :as framing]))

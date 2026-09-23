@@ -3,7 +3,7 @@
   stream-reassembly logic this whole library exists for. Pure `.cljc`, runs
   under plain `kbb -M:test` (no socket, no nbb needed) even though the
   logic under test is what a real TCP stream reassembly needs."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [kotoba.bytes :as bytes]
             [kotoba.wire.framing :as framing]))
 
